@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <title>Universty Website</title>
+ <style>
+ .login-container {
+  text-align: right;
+ position: absolute;
+ top: 30%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background-color: #fff;
+ border: 1px solid green;
+ border-radius: 5px;
+ padding: 20px;
+ text-align: center;
+ }
+.login-form label {
+      display: block; 
+      width: 100px; 
+      text-align: left;  
+      margin-bottom: 5px; 
+    }
+ .login-form {
+ width: 100%;
+ max-width: 300px;
+ margin: 0 auto;
+ }
+
+ .login-form h2 {
+ font-family: Poppins, sans-serif;
+ font-weight: 600;
+ margin-bottom: 20px;
+ }
+
+ .login-form label {
+ display: block;
+ margin-bottom: 5px;
+ }
+
+ .login-form input[type="text"],
+ .login-form input[type="password"] {
+ width: 100%;
+ padding: 10px;
+ border: 1px solid #ccc;
+ border-radius: 3px;
+ margin-bottom: 15px;
+ }
+
+ .forget-password {
+  float: right;
+  margin-top: 5px;
+ color: green;
+ text-decoration: underline;
+ font-size: 0.8rem;
+ margin-bottom: 10px;
+ }
+
+ .login-form button {
+ background-color: green;
+ color: #fff;
+ border: none;
+ padding: 10px 40px;
+ border-radius: 50px;
+ cursor: pointer;
+ }
+
+ .footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ }
+ </style>
+</head>
+<body>
+ <div class="login-container">
+ <h2>Login</h2>
+ <form action="home.html" method="GET" class="login-form">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required><br>
+
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required><br>
+
+ <a href="#" class="forget-password">Forget password?</a> <button type="submit" >Log In</button>
+ </form>
+ </div>
+ <!-- Footer -->
+ <section class="footer">
+ <h1>About Us</h1>
+ <p>For more information, please contact us via</p>
+ <div class="icons">
+ <i class="fa fa-facebook"></i>
+ <i class="fa fa-twitter"></i>
+ <i class="fa fa-instagram"></i>
+ <i class="fa fa-linkedin"></i>
+ </div>
+ 
+ <p>Made By HCI group team.</p>
+ <script>
+        var navlinks = document.getElementById('nav-links');
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

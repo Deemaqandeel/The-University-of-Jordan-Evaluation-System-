@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>University Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="app-bar">
+    <div class="icon-buttons">
+      <div class="exit-button">
+        <a href="index.html" title="Exit"><i class="fa fa-sign-out"></i></a>
+      </div>
+      <div class="chat-button">
+        <a href="#" title="Chat"><i class="fa fa-comments"></i></a>
+      </div>
+    </div>
+
+  <div class="sidebar">
+    <div class="header-content">
+      <img src="images/JU.png" alt="University of Jordan logo" class="logo">
+      <h1 class="header-title">الجامعة الأردنية</h1>
+    </div>
+    <ul>
+      <li onclick="toggleSubMenu('evaluationModels')">نماذج تقييم المواقع الإلكترونية</li>
+      <ul id="evaluationModels" class="submenu">
+        <li onclick="toggleSubMenu('model1')">
+          <a href="#">نموذج تقييم الموقع الإلكتروني للكليات بناء على محتوى الهيكل العام للموقع الإلكتروني</a>
+          <ul id="model1" class="submenu">
+            <li><a href="sub1.html">الموقع الإلكتروني للكلية / School’s Website</a></li>
+            <li><a href="sub2.html">المواقع الإلكترونية للأقسام / Departments’ Websites</a></li>
+          </ul>
+        </li>
+        <li onclick="toggleSubMenu('model2')">
+		<a href="#">نموذج التدقيق التفصيلي للموقع الإلكتروني للكليات حسب الصفحات الإلكترونية في الموقع الإلكتروني</a>
+		<ul id="model2" class="submenu">
+            <li><a href="sub3.html">الموقع العربي –Arabic Website</a></li>
+            <li><a href="sub4.html">الموقع الإنجليزي – English Website  </a></li>
+          </ul>
+		</li>
+        <li><a href="#">نموذج تقييم الموقع الإلكتروني للكليات بناء على مصفوفة التدقيق الداخلي للكليات</a></li>
+      </ul>
+    </ul>
+  </div>
+
+  <script>
+    function toggleSubMenu(id) {
+      var submenu = document.getElementById(id);
+      submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    }
+	
+  </script>
+</body>
+</html>

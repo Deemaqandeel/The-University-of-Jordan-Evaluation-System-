@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>University Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-bar">
+    <div class="exit-button">
+      <a href="index.html" title="Exit"><i class="fa fa-sign-out"></i></a>
+    </div>
+    <!-- <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Courses</a>
+    <a href="#">Contact</a> -->
+  </div>
+
+  <div class="sidebar">
+    <div class="header-content">
+      <img src="images/JU.png" alt="University of Jordan logo" class="logo">
+      <h1 class="header-title">الجامعة الأردنية</h1>
+    </div>
+    <ul>
+      <li onclick="toggleSubMenu('evaluationModels')">نماذج تقييم المواقع الإلكترونية</li>
+      <ul id="evaluationModels" class="submenu">
+        <li onclick="toggleSubMenu('model1')">
+          <a href="#">نموذج تقييم الموقع الإلكتروني للكليات بناء على محتوى الهيكل العام للموقع الإلكتروني</a>
+          <ul id="model1" class="submenu">
+            <li><a href="sub1.html">الموقع الإلكتروني للكلية / School’s Website</a></li>
+            <li><a href="sub2.html">المواقع الإلكترونية للأقسام / Departments’ Websites</a></li>
+          </ul>
+        </li>
+       <li onclick="toggleSubMenu('model2')">
+	   <a href="#">نموذج التدقيق التفصيلي للموقع الإلكتروني للكليات حسب الصفحات الإلكترونية في الموقع الإلكتروني</a>
+		<ul id="model2" class="submenu">
+            <li><a href="sub3.html">الموقع العربي –Arabic Website</a></li>
+            <li><a href="sub4.html">الموقع الإنجليزي – English Website  </a></li>
+          </ul>
+		</li>
+        <li><a href="#">نموذج تقييم الموقع الإلكتروني للكليات بناء على مصفوفة التدقيق الداخلي للكليات</a></li>
+      </ul>
+    </ul>
+  </div>
+<div class="Content">
+  <form class="form-container">
+    <h2>الموقع الإنجليزي – English Website </h2>
+    <div class="form-group">
+      <label for="number">الرقم</label>
+      <select id="number" name="number">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="Pagename">اسم الصفحة/ Page Name</label>
+      <textarea id="Pagename" name="Pagename" rows="4" cols="50"> </textarea>
+    </div>
+    <div class="form-group">
+      <label for="Problem">وصف المشكلة / Problem Description </label>
+      <textarea id="Problem" name="Problem" rows="4" cols="50"></textarea>
+    </div>
+   <div class="form-group">
+      <label for="Recommendations">التوصيات / Recommendations </label>
+      <textarea id="Recommendations" name="Recommendations" rows="4" cols="50"></textarea>
+    </div>
+   <div class="form-group">
+      <label for="Link">الرابط / Link </label>
+      <textarea id="Link" name="Link" rows="4" cols="50"></textarea>
+    </div>
+    
+    <div class="form-buttons">
+      <button type="submit" class="submit-button">Send</button>
+      <button type="reset" class="reset-button" onclick="resetForm()">Reset</button>
+    </div>
+  </form>
+</div>
+
+  <script>
+    function toggleSubMenu(id) {
+      var submenu = document.getElementById(id);
+      submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    }
+	function resetForm() {
+    document.getElementById("evaluationForm").reset();
+  }
+  </script>
+</body>
+</html>

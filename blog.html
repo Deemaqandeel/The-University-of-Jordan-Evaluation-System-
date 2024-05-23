@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Universty Website</title>
+</head>
+<body>
+    <div class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/JU.png" alt="" ></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2024 </h1>
+    </div>
+    <!-- Blog page -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/s.png" alt="">
+                <h2>Our Certificate & Online Programs For 2024</h2>
+<p>The University of Jordan is proud to offer a range of certificate and online programs for 2024, designed to meet diverse educational needs and professional goals. Our offerings include:</p>
+<br>
+<p>Certificate in Data Science: Gain expertise in data analysis, machine learning, and big data technologies.</p>
+<br>
+<p>Certificate in Business Management: Develop essential skills in leadership, strategic planning, and organizational behavior.</p>
+<br>
+<p>Online MBA: Enhance your business acumen and leadership skills with our flexible, fully online Master of Business Administration program.</p>
+<br>
+<p>Certificate in Digital Marketing: Learn the latest strategies in social media marketing, SEO, and online advertising.</p>
+<br>
+<p>Certificate in Environmental Sustainability: Explore sustainable practices and environmental management techniques.</p>
+<br>
+<p>Online Master's in Education: Advance your teaching career with our online master's program focused on modern educational methodologies.</p>
+<br>
+<p>These programs are designed to provide flexible, high-quality education, allowing you to learn at your own pace and on your own schedule. Join us in 2024 and take a significant step forward in your professional journey.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form action="" class="comment-form">
+                        <input type="text" placeholder="Enter Your Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="btn about-btn">Post Comment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>11</span>
+                </div>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>26</span>
+                </div>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>31</span>
+                </div>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>46</span>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+  
+<!-- Footer -->
+<section class="footer">
+    <h1>About Us</h1>
+    <p>For more information, please contact us via</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+   <p>Made By HCI group team.</p>
+</section>
+
+
+    <!-- JavaScript For Toggel -->
+    <script>
+        var navlinks = document.getElementById('nav-links');
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
